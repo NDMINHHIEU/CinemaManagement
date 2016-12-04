@@ -1,0 +1,8 @@
+c:\users\win 8.1 version 2\documents\visual studio 2010\Projects\CinemaM\CinemaManagement\bin\Debug\CinemaManagement.exe
+c:\users\win 8.1 version 2\documents\visual studio 2010\Projects\CinemaM\CinemaManagement\bin\Debug\CinemaManagement.pdb
+c:\users\win 8.1 version 2\documents\visual studio 2010\Projects\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frMain.resources
+c:\users\win 8.1 version 2\documents\visual studio 2010\Projects\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frSplash.resources
+c:\users\win 8.1 version 2\documents\visual studio 2010\Projects\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.Properties.Resources.resources
+c:\users\win 8.1 version 2\documents\visual studio 2010\Projects\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.csproj.GenerateResource.Cache
+c:\users\win 8.1 version 2\documents\visual studio 2010\Projects\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.exe
+c:\users\win 8.1 version 2\documents\visual studio 2010\Projects\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.pdb
