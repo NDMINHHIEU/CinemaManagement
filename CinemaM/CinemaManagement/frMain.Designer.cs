@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Name = "frMain";
             this.Text = "frMain";
+            this.Load += new System.EventHandler(this.frMain_Load);
             this.ResumeLayout(false);
 
         }

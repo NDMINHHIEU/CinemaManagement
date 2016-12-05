@@ -6,3 +6,14 @@ c:\users\win 8.1 version 2\documents\visual studio 2010\Projects\CinemaM\CinemaM
 c:\users\win 8.1 version 2\documents\visual studio 2010\Projects\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.csproj.GenerateResource.Cache
 c:\users\win 8.1 version 2\documents\visual studio 2010\Projects\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.exe
 c:\users\win 8.1 version 2\documents\visual studio 2010\Projects\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.pdb
+C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.exe
+C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.pdb
+C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\bin\Debug\CinemaManagement.exe
+C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\bin\Debug\CinemaManagement.pdb
+C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frConfig.resources
+C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frMain.resources
+C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frSplash.resources
+C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.Properties.Resources.resources
+C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.csproj.GenerateResource.Cache
+C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.csprojResolveAssemblyReference.cache
+C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\bin\Debug\CinemaManagement.exe.config

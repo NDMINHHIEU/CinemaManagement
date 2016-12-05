@@ -37,19 +37,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label1.Location = new System.Drawing.Point(83, 98);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(140, 190);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(360, 31);
+            this.label1.Size = new System.Drawing.Size(258, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Chương trình đang khởi động";
             // 
             // loadingBar
             // 
-            this.loadingBar.Location = new System.Drawing.Point(104, 177);
+            this.loadingBar.Location = new System.Drawing.Point(99, 237);
             this.loadingBar.Name = "loadingBar";
-            this.loadingBar.Size = new System.Drawing.Size(344, 26);
+            this.loadingBar.Size = new System.Drawing.Size(344, 10);
             this.loadingBar.TabIndex = 1;
             // 
             // timer1
@@ -61,12 +62,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.Color.Gainsboro;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(552, 316);
             this.Controls.Add(this.loadingBar);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frSplash";
