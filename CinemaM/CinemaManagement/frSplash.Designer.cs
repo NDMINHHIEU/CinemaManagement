@@ -70,7 +70,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frSplash";
+            this.Text = "Khởi động";
+            this.Load += new System.EventHandler(this.frSplash_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

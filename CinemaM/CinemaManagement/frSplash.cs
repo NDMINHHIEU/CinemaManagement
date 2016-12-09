@@ -11,6 +11,7 @@ namespace CinemaManagement
 {
     public partial class frSplash : Form
     {
+        LopDungChung a = new LopDungChung();
         public frSplash()
         {
             InitializeComponent();
@@ -22,8 +23,14 @@ namespace CinemaManagement
             if (loadingBar.Value == 100)
             {
                 timer1.Stop();
-                this.Close();
+                this.Hide();
+                a.CheckConfig();
             }
+        }
+
+        private void frSplash_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

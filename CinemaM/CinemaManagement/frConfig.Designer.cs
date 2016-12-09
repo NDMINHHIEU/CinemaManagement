@@ -56,16 +56,18 @@
             // 
             // txtServer
             // 
+            this.txtServer.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtServer.Location = new System.Drawing.Point(180, 35);
             this.txtServer.Name = "txtServer";
-            this.txtServer.Size = new System.Drawing.Size(231, 32);
+            this.txtServer.Size = new System.Drawing.Size(231, 31);
             this.txtServer.TabIndex = 1;
             // 
             // txtData
             // 
+            this.txtData.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtData.Location = new System.Drawing.Point(180, 72);
             this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(231, 32);
+            this.txtData.Size = new System.Drawing.Size(231, 31);
             this.txtData.TabIndex = 1;
             // 
             // btConfirm

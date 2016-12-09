@@ -7,24 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Threading;
-using System.Configuration;
 
 namespace CinemaManagement
 {
-    public partial class frMain : Form
+    public partial class frAdmin : Form
     {
-        public frMain()
+        public frAdmin()
         {
             InitializeComponent();
         }
 
-        private void frMain_Load(object sender, EventArgs e)
+        private void frAdmin_Load(object sender, EventArgs e)
         {
             
         }
 
-        private void frMain_FormClosed(object sender, FormClosedEventArgs e)
+        private void frAdmin_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }

@@ -37,6 +37,9 @@
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,11 +50,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frAdmin.Designer.cs">
+      <DependentUpon>frAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frConfig.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frConfig.Designer.cs">
       <DependentUpon>frConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frLogin.Designer.cs">
+      <DependentUpon>frLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="frMain.cs">
       <SubType>Form</SubType>
@@ -68,8 +83,14 @@
     <Compile Include="LopDungChung.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frAdmin.resx">
+      <DependentUpon>frAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frConfig.resx">
       <DependentUpon>frConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frLogin.resx">
+      <DependentUpon>frLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frMain.resx">
       <DependentUpon>frMain.cs</DependentUpon>

@@ -33,8 +33,7 @@ namespace CinemaManagement
         private void btConfirm_Click(object sender, EventArgs e)
         {
             UpdateConfiguration();
-            a.cnStr = "Server = " + ConfigurationManager.AppSettings["Server"] + "; Database = " + ConfigurationManager.AppSettings["Database"] + ";Integrated Security = true;";
-            a.cn = new System.Data.SqlClient.SqlConnection(a.cnStr);
+            a.TaoKetNoi();
             a.Connect();
             if (a.check == 1)
             {
