@@ -19,3 +19,4 @@ C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\obj\x86\Debug
 C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\bin\Debug\CinemaManagement.exe.config
 C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frAdmin.resources
 C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frLogin.resources
+C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frDataEntry.resources
