@@ -15,7 +15,7 @@ namespace CinemaManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frDataEntry());
+            Application.Run(new forminthongtin());
         }
     }
 }

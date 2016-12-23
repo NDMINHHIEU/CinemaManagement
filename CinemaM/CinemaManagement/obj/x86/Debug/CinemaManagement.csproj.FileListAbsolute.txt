@@ -20,3 +20,20 @@ C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\bin\Debug\Cin
 C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frAdmin.resources
 C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frLogin.resources
 C:\Users\Win 8.1 Version 2\Desktop\Cinema\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frDataEntry.resources
+C:\Users\Win 8.1 Version 2\Desktop\New folder\CinemaM\CinemaManagement\bin\Debug\CinemaManagement.exe.config
+C:\Users\Win 8.1 Version 2\Desktop\New folder\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.exe
+C:\Users\Win 8.1 Version 2\Desktop\New folder\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.pdb
+C:\Users\Win 8.1 Version 2\Desktop\New folder\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.csprojResolveAssemblyReference.cache
+C:\Users\Win 8.1 Version 2\Desktop\New folder\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.Form1.resources
+C:\Users\Win 8.1 Version 2\Desktop\New folder\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.forminthongtin.resources
+C:\Users\Win 8.1 Version 2\Desktop\New folder\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frAdmin.resources
+C:\Users\Win 8.1 Version 2\Desktop\New folder\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frConfig.resources
+C:\Users\Win 8.1 Version 2\Desktop\New folder\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frLogin.resources
+C:\Users\Win 8.1 Version 2\Desktop\New folder\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frMain.resources
+C:\Users\Win 8.1 Version 2\Desktop\New folder\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frSplash.resources
+C:\Users\Win 8.1 Version 2\Desktop\New folder\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.Properties.Resources.resources
+C:\Users\Win 8.1 Version 2\Desktop\New folder\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.csproj.GenerateResource.Cache
+C:\Users\Win 8.1 Version 2\Desktop\New folder\CinemaM\CinemaManagement\bin\Debug\CinemaManagement.exe
+C:\Users\Win 8.1 Version 2\Desktop\New folder\CinemaM\CinemaManagement\bin\Debug\CinemaManagement.pdb
+C:\Users\Win 8.1 Version 2\Desktop\New folder\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frRP.resources
+C:\Users\Win 8.1 Version 2\Desktop\New folder\CinemaM\CinemaManagement\obj\x86\Debug\CinemaManagement.frThongKe.resources

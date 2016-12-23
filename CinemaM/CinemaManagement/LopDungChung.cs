@@ -58,7 +58,7 @@ namespace CinemaManagement
             {
                 MessageBox.Show("Đây là lần đầu tiên bạn chạy ứng dụng ?");
                 frConfig c = new frConfig();
-                c.ShowDialog() ;
+                c.Show() ;
             }
             else
             {
@@ -68,15 +68,19 @@ namespace CinemaManagement
                     SqlConnection checkConnect = new SqlConnection(test);
                     checkConnect.Open();
                     frLogin l = new frLogin();
-                    l.ShowDialog();
+                    l.Show();
                 }
                 catch
                 {
                     MessageBox.Show("Your Configuration information doesn't correct, please check your info now");
                     frConfig c = new frConfig();
-                    c.ShowDialog();
+                    c.Show();
                 }
             }
+        }
+        public void TinhTien()
+        {
+            TruyenData.ThanhTien = TruyenData.TongGhe * (TruyenData.GiaVe - TruyenData.MucGiamGia);
         }
     }
 }

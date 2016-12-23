@@ -34,12 +34,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,11 +53,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frDataEntry.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frDataEntry.designer.cs">
-      <DependentUpon>frDataEntry.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forminthongtin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forminthongtin.Designer.cs">
+      <DependentUpon>Forminthongtin.cs</DependentUpon>
     </Compile>
     <Compile Include="frAdmin.cs">
       <SubType>Form</SubType>
@@ -80,17 +89,33 @@
     <Compile Include="frMain.Designer.cs">
       <DependentUpon>frMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frRP.Designer.cs">
+      <DependentUpon>frRP.cs</DependentUpon>
+    </Compile>
     <Compile Include="frSplash.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frSplash.Designer.cs">
       <DependentUpon>frSplash.cs</DependentUpon>
     </Compile>
+    <Compile Include="frThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frThongKe.Designer.cs">
+      <DependentUpon>frThongKe.cs</DependentUpon>
+    </Compile>
     <Compile Include="LopDungChung.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frDataEntry.resx">
-      <DependentUpon>frDataEntry.cs</DependentUpon>
+    <Compile Include="TruyenData.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forminthongtin.resx">
+      <DependentUpon>Forminthongtin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frAdmin.resx">
       <DependentUpon>frAdmin.cs</DependentUpon>
@@ -104,8 +129,14 @@
     <EmbeddedResource Include="frMain.resx">
       <DependentUpon>frMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frRP.resx">
+      <DependentUpon>frRP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frSplash.resx">
       <DependentUpon>frSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frThongKe.resx">
+      <DependentUpon>frThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -115,6 +146,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
