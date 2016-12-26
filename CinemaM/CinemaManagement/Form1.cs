@@ -47,21 +47,28 @@ namespace CinemaManagement
 
         private void label3_Click(object sender, EventArgs e)
         {
-            if (a.cn.State == ConnectionState.Closed)
-                a.cn.Open();
-            Label lb = (Label)sender;
-            lb.BackColor = Color.Red;
-            soghe--;
-            labeldem.Text=soghe.ToString();
-            TruyenData.SoGhe = TruyenData.SoGhe + lb.Text + ',';
-            if (soghe == 0)
+            try
             {
-                giaKM("select MucGiamGia from SuKienKM where MaSuKien = '" + TruyenData.maSK + "'");
-                DataTable dt = (DataTable)gkm.DataSource;
-                DataRow dr = dt.Rows[0];
-                TruyenData.MucGiamGia = Convert.ToInt32(dr[0]);
-                a.TinhTien();
-                MessageBox.Show("Ban da chon het ghe!");
+                if (a.cn.State == ConnectionState.Closed)
+                a.cn.Open();
+                Label lb = (Label)sender;
+                lb.BackColor = Color.Red;
+                soghe--;
+                labeldem.Text=soghe.ToString();
+                TruyenData.SoGhe = TruyenData.SoGhe + lb.Text + ',';
+                if (soghe == 0)
+                {
+                    giaKM("select MucGiamGia from SuKienKM where MaSuKien = '" + TruyenData.maSK + "'");
+                    DataTable dt = (DataTable)gkm.DataSource;
+                    DataRow dr = dt.Rows[0];
+                    TruyenData.MucGiamGia = Convert.ToInt32(dr[0]);
+                    a.TinhTien();
+                    MessageBox.Show("Ban da chon het ghe!");
+                }
+            }
+            catch (SqlException sq)
+            {
+                MessageBox.Show(sq.Message);
             }
         }
 

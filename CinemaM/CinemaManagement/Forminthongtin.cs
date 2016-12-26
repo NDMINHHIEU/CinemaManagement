@@ -154,50 +154,78 @@ namespace CinemaManagement
         private void comboBox3_SelectionChangeCommitted(object sender, EventArgs e)
         {
 
-            TruyenData.maGG = Convert.ToInt32(comboBox3.SelectedValue);
-            gias("select d.MaDangPhim, g.SoTien from DangPhim d, Gia g where d.MaDangPhim = g.MaDangPhim and d.MaDangPhim = '" + TruyenData.maGG + "'");
-            DataTable dbgia = (DataTable)gia.DataSource;
-            DataRow drgia = dbgia.Rows[0];
-            TruyenData.GiaVe = Convert.ToInt32(drgia[1]);
-            TruyenData.maSK = Convert.ToInt32(cbKM.SelectedValue);
-            giaKM("select MucGiamGia from SuKienKM where MaSuKien = '" + TruyenData.maSK + "'");
-            DataTable dt = (DataTable)gkm.DataSource;
-            DataRow dr = dt.Rows[0];
-            TruyenData.MucGiamGia = Convert.ToInt32(dr[0]);
-            a.TinhTien();
-            tbGiave.Text = TruyenData.ThanhTien.ToString();
+            try
+            {
+                TruyenData.maGG = Convert.ToInt32(comboBox3.SelectedValue);
+                gias("select d.MaDangPhim, g.SoTien from DangPhim d, Gia g where d.MaDangPhim = g.MaDangPhim and d.MaDangPhim = '" + TruyenData.maGG + "'");
+                DataTable dbgia = (DataTable)gia.DataSource;
+                DataRow drgia = dbgia.Rows[0];
+                TruyenData.GiaVe = Convert.ToInt32(drgia[1]);
+                TruyenData.maSK = Convert.ToInt32(cbKM.SelectedValue);
+                giaKM("select MucGiamGia from SuKienKM where MaSuKien = '" + TruyenData.maSK + "'");
+                DataTable dt = (DataTable)gkm.DataSource;
+                DataRow dr = dt.Rows[0];
+                TruyenData.MucGiamGia = Convert.ToInt32(dr[0]);
+                a.TinhTien();
+                tbGiave.Text = TruyenData.ThanhTien.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void capnhatVe()
         {
-            if (a.cn.State == ConnectionState.Closed)
+            try
+            {
+                if (a.cn.State == ConnectionState.Closed)
                 a.cn.Open();
-            string sql = "insert into Ve(MaNV,MaPC,MaS,MaGia,MaSuKien,MaPhim,Ghe,DonGia) values (@manv,@mapc,@mas,@magia,@mask,@maphim,@ghe,@thanhtien)";
-            SqlCommand cmd = new SqlCommand(sql, a.cn);
-            cmd.Parameters.AddWithValue("@manv", comboBox5.SelectedValue);
-            cmd.Parameters.AddWithValue("@mapc", comboBox4.SelectedValue);
-            cmd.Parameters.AddWithValue("@mas", comboBox2.SelectedValue);
-            cmd.Parameters.AddWithValue("@magia", comboBox3.SelectedValue);
-            cmd.Parameters.AddWithValue("@mask", cbKM.SelectedValue);
-            cmd.Parameters.AddWithValue("@maphim", comboBox1.SelectedValue);
-            cmd.Parameters.AddWithValue("@ghe", TruyenData.SoGhe);
-            cmd.Parameters.AddWithValue("thanhtien", TruyenData.ThanhTien);
-            cmd.ExecuteNonQuery();
+                string sql = "insert into Ve(MaNV,MaPC,MaS,MaGia,MaSuKien,MaPhim,Ghe,DonGia) values (@manv,@mapc,@mas,@magia,@mask,@maphim,@ghe,@thanhtien)";
+                SqlCommand cmd = new SqlCommand(sql, a.cn);
+                cmd.Parameters.AddWithValue("@manv", comboBox5.SelectedValue);
+                cmd.Parameters.AddWithValue("@mapc", comboBox4.SelectedValue);
+                cmd.Parameters.AddWithValue("@mas", comboBox2.SelectedValue);
+                cmd.Parameters.AddWithValue("@magia", comboBox3.SelectedValue);
+                cmd.Parameters.AddWithValue("@mask", cbKM.SelectedValue);
+                cmd.Parameters.AddWithValue("@maphim", comboBox1.SelectedValue);
+                cmd.Parameters.AddWithValue("@ghe", TruyenData.SoGhe);
+                cmd.Parameters.AddWithValue("thanhtien", TruyenData.ThanhTien);
+                cmd.ExecuteNonQuery();
+            }
+            catch (SqlException sq)
+            {
+                MessageBox.Show(sq.Message);
+            }
         }
 
         private void btXuat_Click(object sender, EventArgs e)
         {
-            XuatRaVe();
-            capnhatVe();
-            frRP ve = new frRP();
-            ve.ShowDialog();
-            tbSoghe.Text = tbGiave.Text = textBox1.Text = "";
+            try
+            {
+                XuatRaVe();
+                capnhatVe();
+                frRP ve = new frRP();
+                ve.ShowDialog();
+                tbSoghe.Text = tbGiave.Text = textBox1.Text = "";
+            }
+            catch (SqlException sq)
+            {
+                MessageBox.Show(sq.Message);
+            }
         }
 
         private void btThongKe_Click(object sender, EventArgs e)
         {
-            frThongKe tk = new frThongKe();
-            tk.Show();
+            try
+            {
+                frThongKe tk = new frThongKe();
+                tk.Show();
+            }
+            catch (SqlException sq)
+            {
+                MessageBox.Show(sq.Message);
+            }
         }
     }
 }
