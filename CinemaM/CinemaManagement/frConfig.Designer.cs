@@ -60,7 +60,7 @@
             this.txtServer.Location = new System.Drawing.Point(180, 35);
             this.txtServer.Name = "txtServer";
             this.txtServer.Size = new System.Drawing.Size(231, 31);
-            this.txtServer.TabIndex = 1;
+            this.txtServer.TabIndex = 0;
             // 
             // txtData
             // 
@@ -87,7 +87,7 @@
             this.btClose.Location = new System.Drawing.Point(243, 132);
             this.btClose.Name = "btClose";
             this.btClose.Size = new System.Drawing.Size(135, 42);
-            this.btClose.TabIndex = 2;
+            this.btClose.TabIndex = 3;
             this.btClose.Text = "Close";
             this.btClose.UseVisualStyleBackColor = true;
             this.btClose.Click += new System.EventHandler(this.btClose_Click);

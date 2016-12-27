@@ -48,6 +48,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cbKM = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.btGiaVe = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbTenphim
@@ -171,7 +172,7 @@
             // 
             // btXuat
             // 
-            this.btXuat.Location = new System.Drawing.Point(127, 246);
+            this.btXuat.Location = new System.Drawing.Point(71, 246);
             this.btXuat.Name = "btXuat";
             this.btXuat.Size = new System.Drawing.Size(119, 34);
             this.btXuat.TabIndex = 9;
@@ -197,7 +198,7 @@
             // 
             // btThongKe
             // 
-            this.btThongKe.Location = new System.Drawing.Point(304, 246);
+            this.btThongKe.Location = new System.Drawing.Point(208, 246);
             this.btThongKe.Name = "btThongKe";
             this.btThongKe.Size = new System.Drawing.Size(130, 34);
             this.btThongKe.TabIndex = 10;
@@ -234,6 +235,16 @@
             this.comboBox5.Size = new System.Drawing.Size(134, 28);
             this.comboBox5.TabIndex = 8;
             // 
+            // btGiaVe
+            // 
+            this.btGiaVe.Location = new System.Drawing.Point(357, 246);
+            this.btGiaVe.Name = "btGiaVe";
+            this.btGiaVe.Size = new System.Drawing.Size(130, 34);
+            this.btGiaVe.TabIndex = 10;
+            this.btGiaVe.Text = "CẬP NHẬT GIÁ";
+            this.btGiaVe.UseVisualStyleBackColor = true;
+            this.btGiaVe.Click += new System.EventHandler(this.btGiaVe_Click);
+            // 
             // forminthongtin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -241,6 +252,7 @@
             this.ClientSize = new System.Drawing.Size(560, 301);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btGiaVe);
             this.Controls.Add(this.btThongKe);
             this.Controls.Add(this.btXuat);
             this.Controls.Add(this.tbSoghe);
@@ -292,5 +304,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbKM;
         private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Button btGiaVe;
     }
 }

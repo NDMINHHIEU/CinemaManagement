@@ -23,8 +23,8 @@ namespace CinemaManagement
             if (loadingBar.Value == 100)
             {
                 timer1.Stop();
-                this.Hide();
                 a.CheckConfig();
+                this.Hide();
             }
         }
 

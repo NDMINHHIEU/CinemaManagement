@@ -62,7 +62,7 @@
             this.txtTenTKfrLogin.Location = new System.Drawing.Point(157, 48);
             this.txtTenTKfrLogin.Name = "txtTenTKfrLogin";
             this.txtTenTKfrLogin.Size = new System.Drawing.Size(258, 33);
-            this.txtTenTKfrLogin.TabIndex = 1;
+            this.txtTenTKfrLogin.TabIndex = 0;
             // 
             // txtMKfrLogin
             // 
@@ -90,7 +90,7 @@
             this.btHuyfrLogin.Location = new System.Drawing.Point(259, 155);
             this.btHuyfrLogin.Name = "btHuyfrLogin";
             this.btHuyfrLogin.Size = new System.Drawing.Size(117, 36);
-            this.btHuyfrLogin.TabIndex = 2;
+            this.btHuyfrLogin.TabIndex = 3;
             this.btHuyfrLogin.Text = "Hủy";
             this.btHuyfrLogin.UseVisualStyleBackColor = true;
             this.btHuyfrLogin.Click += new System.EventHandler(this.btHuyfrLogin_Click);
@@ -110,7 +110,6 @@
             this.Name = "frLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frLogin_FormClosing);
             this.Load += new System.EventHandler(this.frLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

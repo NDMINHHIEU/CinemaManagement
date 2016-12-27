@@ -227,5 +227,11 @@ namespace CinemaManagement
                 MessageBox.Show(sq.Message);
             }
         }
+
+        private void btGiaVe_Click(object sender, EventArgs e)
+        {
+            frMain giave = new frMain();
+            giave.Show();
+        }
     }
 }

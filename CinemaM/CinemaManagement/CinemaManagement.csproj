@@ -33,16 +33,16 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
-    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,6 +64,12 @@
     </Compile>
     <Compile Include="Forminthongtin.Designer.cs">
       <DependentUpon>Forminthongtin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frLich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frLich.designer.cs">
+      <DependentUpon>frLich.cs</DependentUpon>
     </Compile>
     <Compile Include="frAdmin.cs">
       <SubType>Form</SubType>
@@ -89,17 +95,47 @@
     <Compile Include="frMain.Designer.cs">
       <DependentUpon>frMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frMain2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frMain2.Designer.cs">
+      <DependentUpon>frMain2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frOrther.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frOrther.Designer.cs">
+      <DependentUpon>frOrther.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frPhim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frPhim.designer.cs">
+      <DependentUpon>frPhim.cs</DependentUpon>
+    </Compile>
     <Compile Include="frRP.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frRP.Designer.cs">
       <DependentUpon>frRP.cs</DependentUpon>
     </Compile>
+    <Compile Include="frSkkm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frSkkm.Designer.cs">
+      <DependentUpon>frSkkm.cs</DependentUpon>
+    </Compile>
     <Compile Include="frSplash.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frSplash.Designer.cs">
       <DependentUpon>frSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrSuatChieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrSuatChieu.Designer.cs">
+      <DependentUpon>FrSuatChieu.cs</DependentUpon>
     </Compile>
     <Compile Include="frThongKe.cs">
       <SubType>Form</SubType>
@@ -117,6 +153,9 @@
     <EmbeddedResource Include="Forminthongtin.resx">
       <DependentUpon>Forminthongtin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frLich.resx">
+      <DependentUpon>frLich.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frAdmin.resx">
       <DependentUpon>frAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,11 +168,26 @@
     <EmbeddedResource Include="frMain.resx">
       <DependentUpon>frMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frMain2.resx">
+      <DependentUpon>frMain2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frOrther.resx">
+      <DependentUpon>frOrther.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frPhim.resx">
+      <DependentUpon>frPhim.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frRP.resx">
       <DependentUpon>frRP.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frSkkm.resx">
+      <DependentUpon>frSkkm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frSplash.resx">
       <DependentUpon>frSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrSuatChieu.resx">
+      <DependentUpon>FrSuatChieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frThongKe.resx">
       <DependentUpon>frThongKe.cs</DependentUpon>
@@ -146,7 +200,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
@@ -158,6 +211,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
